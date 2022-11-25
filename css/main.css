@@ -12,6 +12,10 @@ header {
     float: right;
     width: 20px;
     height: 20px;
+    transition: all 1s;
+}
+.btn-close img:hover {
+    box-shadow: 7px 5px 15px -6px grey;
 }
 
 main {
