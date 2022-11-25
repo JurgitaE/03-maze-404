@@ -1,17 +1,23 @@
 header {
     display: inline-block;
-
     width: 700px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: calc((100% - 700px) / 2);
 }
-header a {
+
+.btn-close {
     float: right;
 }
+.btn-close img {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
 main {
     display: inline-block;
     width: 700px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: calc((100% - 700px) / 2);
 }
 
@@ -23,4 +29,5 @@ main > div {
 img {
     width: 30%;
     float: left;
+    margin-left: 5%;
 }
