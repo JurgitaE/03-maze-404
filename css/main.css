@@ -1,8 +1,11 @@
+body {
+    font-family: "Arial Narrow", sans-serif;
+}
 header {
     display: inline-block;
-    width: 700px;
+    width: 760px;
     margin-top: 60px;
-    margin-left: calc((100% - 700px) / 2);
+    margin-left: calc((100% - 760px) / 2);
 }
 
 .btn-close {
@@ -15,23 +18,39 @@ header {
     transition: all 1s;
 }
 .btn-close img:hover {
-    box-shadow: 7px 5px 15px -6px grey;
+    box-shadow: 7px 5px 15px -6px #1f4d14;
 }
 
 main {
     display: inline-block;
     width: 700px;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-left: calc((100% - 700px) / 2);
 }
 
 main > div {
     width: 45%;
     float: right;
+    margin-right: 3%;
 }
-
 img {
     width: 30%;
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
+}
+h1 {
+    color: #1f4d14;
+    font-size: 190px;
+    line-height: 1em;
+    margin: 17px 0px;
+}
+h1 + p {
+    color: #1f4d14;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p + p {
+    color: grey;
+    font-size: 22px;
 }
