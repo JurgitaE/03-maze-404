@@ -18,7 +18,7 @@ header {
     transition: all 1s;
 }
 .btn-close img:hover {
-    box-shadow: 7px 5px 15px -6px #1f4d14;
+    box-shadow: 0.1em 0.25em 0.6em -0.3em #1f4d14;
 }
 
 main {
@@ -42,7 +42,7 @@ h1 {
     color: #1f4d14;
     font-size: 190px;
     line-height: 1em;
-    margin: 17px 0px;
+    margin: 0.09em 0px;
 }
 h1 + p {
     color: #1f4d14;
@@ -53,18 +53,19 @@ h1 + p {
 p + p {
     color: grey;
     font-size: 22px;
+    line-height: 1.2em;
 }
 .btn-home {
     display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
     text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0em 0.25em 0.6em -0.1em #61ae4f;
     color: white;
     background-color: #61ae4f;
-    font-size: 20px;
-    box-shadow: 2px 5px 12px -2px #61ae4f;
-    margin-top: 10px;
-    padding: 0.5em 1em;
     transition: all 0.5s;
 }
 .btn-home:hover {
-    box-shadow: 2px 5px 12px -2px #1f4d14;
+    box-shadow: 0em 0.25em 0.6em -0.1em #1f4d14;
 }
