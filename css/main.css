@@ -11,8 +11,8 @@ header {
 .btn-close {
     float: right;
 }
+
 .btn-close img {
-    float: right;
     width: 20px;
     height: 20px;
     transition: all 1s;
@@ -53,4 +53,18 @@ h1 + p {
 p + p {
     color: grey;
     font-size: 22px;
+}
+.btn-home {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #61ae4f;
+    font-size: 20px;
+    box-shadow: 2px 5px 12px -2px #61ae4f;
+    margin-top: 10px;
+    padding: 0.5em 1em;
+    transition: all 0.5s;
+}
+.btn-home:hover {
+    box-shadow: 2px 5px 12px -2px #1f4d14;
 }
