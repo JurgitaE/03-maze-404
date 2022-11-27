@@ -1,7 +1,7 @@
 body {
     font-family: "Arial Narrow", sans-serif;
 }
-header {
+.main-header {
     display: inline-block;
     width: 760px;
     margin-top: 60px;
@@ -15,7 +15,7 @@ header {
 .btn-close img {
     width: 20px;
     height: 20px;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .btn-close img:hover {
     box-shadow: 0.1em 0.25em 0.6em -0.3em #1f4d14;
@@ -28,29 +28,29 @@ main {
     margin-left: calc((100% - 700px) / 2);
 }
 
-main > div {
+.right-column {
     width: 45%;
     float: right;
     margin-right: 3%;
 }
-img {
+.left-column {
     width: 30%;
     float: left;
     margin-left: 3%;
 }
-h1 {
+.main-title {
     color: #1f4d14;
     font-size: 190px;
     line-height: 1em;
     margin: 0.09em 0px;
 }
-h1 + p {
+.description {
     color: #1f4d14;
     font-weight: bold;
     font-size: 24px;
 }
 
-p + p {
+.directions {
     color: grey;
     font-size: 22px;
     line-height: 1.2em;
