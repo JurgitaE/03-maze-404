@@ -23,20 +23,20 @@ body {
 
 main {
     display: inline-block;
-    width: 700px;
+    width: 760px;
     margin-top: 60px;
-    margin-left: calc((100% - 700px) / 2);
+    margin-left: calc((100% - 760px) / 2);
 }
 
 .right-column {
-    width: 45%;
+    width: 41%;
     float: right;
-    margin-right: 3%;
+    margin-right: 7%;
 }
 .left-column {
-    width: 30%;
+    width: 27.5%;
     float: left;
-    margin-left: 3%;
+    margin-left: 7%;
 }
 .main-title {
     color: #1f4d14;
