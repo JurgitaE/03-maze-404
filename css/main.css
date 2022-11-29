@@ -1,3 +1,10 @@
+body,
+body * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --main-color: #1f4d14;
     --width: 760px;
@@ -6,7 +13,9 @@ body {
     font-family: "Arial Narrow", sans-serif;
 }
 .main-header {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
     width: var(--width);
     margin-top: 60px;
     margin-left: calc((100% - var(--width)) / 2);
@@ -26,7 +35,9 @@ body {
 }
 
 .main-content {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     width: var(--width);
     margin-top: 60px;
     margin-left: calc((100% - var(--width)) / 2);
@@ -34,12 +45,10 @@ body {
 
 .right-column {
     width: 41%;
-    float: right;
     margin-right: 7%;
 }
 .left-column {
     width: 27.5%;
-    float: left;
     margin-left: 7%;
 }
 .main-title {
@@ -49,12 +58,14 @@ body {
     margin: 0.09em 0px;
 }
 .description {
+    margin-bottom: 1em;
     color: var(--main-color);
     font-weight: bold;
     font-size: 24px;
 }
 
 .directions {
+    margin-bottom: 1.5em;
     color: grey;
     font-size: 22px;
     line-height: 1.2em;
@@ -62,9 +73,10 @@ body {
 .btn-home {
     display: inline-block;
     margin-top: 0.5em;
-    padding: 0.5em 1em;
+    padding: 0.8em 1.3em;
     text-decoration: none;
-    font-size: 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
     box-shadow: 0em 0.25em 0.6em -0.1em #61ae4f;
     color: white;
     background-color: #61ae4f;
@@ -72,4 +84,12 @@ body {
 }
 .btn-home:hover {
     box-shadow: 0em 0.25em 0.6em -0.1em var(--main-color);
+}
+
+@media (max-width: 800px) {
+    .main-header,
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
 }
