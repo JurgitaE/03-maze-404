@@ -13,11 +13,14 @@ body {
     font-family: "Arial Narrow", sans-serif;
 }
 .main-header {
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
     width: var(--width);
     margin-top: 60px;
     margin-left: calc((100% - var(--width)) / 2);
+}
+.header-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .btn-close img {
@@ -82,9 +85,53 @@ body {
 }
 
 @media (max-width: 800px) {
+    .btn-close {
+        padding-right: 5px;
+    }
+
     .main-header,
     .main-content {
         width: 100%;
+        margin-top: 20px;
         margin-left: 0;
+    }
+    .main-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .left-column,
+    .right-column {
+       
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-column {
+        max-width: 210px;
+    }
+
+    .main-title {
+        font-size: 110px;
+    }
+    .description {
+        font-size: 18px;
+    }
+
+    .directions {
+        font-size: 16px;
+        margin-bottom: 1em;
     }
 }
