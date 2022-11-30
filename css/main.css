@@ -15,14 +15,9 @@ body {
 .main-header {
     display: flex;
     justify-content: flex-end;
-    /* align-items: flex-start; */
     width: var(--width);
     margin-top: 60px;
     margin-left: calc((100% - var(--width)) / 2);
-}
-
-.btn-close {
-    float: right;
 }
 
 .btn-close img {
@@ -45,11 +40,11 @@ body {
 
 .right-column {
     width: 41%;
-    margin-right: 7%;
+    margin-right: 6%;
 }
 .left-column {
-    width: 27.5%;
-    margin-left: 7%;
+    width: 28%;
+    margin-left: 6%;
 }
 .main-title {
     color: var(--main-color);
